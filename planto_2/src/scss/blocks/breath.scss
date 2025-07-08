@@ -431,6 +431,8 @@
             object-fit: contain;
         }
     }
+
+   
 }
 
 .breath__logo:hover {
@@ -440,7 +442,7 @@
 }
 
 .breath__logo:focus,
-.breath__logo:active {
+.breath__logo:active    {
     outline: none;
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.8), 0 0 18px 6px rgba(120, 180, 255, 0.5);
     transition: box-shadow 0.2s;
@@ -458,6 +460,11 @@
 
         }
     }
+    .breath__name {
+        font-size: clamp(8px, 2vw, 32px);
+        width:clamp(320px, 40vw, 700px);
+        margin-left: 250px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -474,8 +481,34 @@
         &__btns {
             margin-bottom: 32px;
         }
+
+        &__portfolio {
+            width: clamp(320px, 40vw, 700px);
+            height: clamp(162px, 20vw, 320px);
+            padding-left: clamp(20px, 4vw, 80px);
+            .breath__name {
+                font-size: clamp(8px, 2vw, 32px);
+                width:clamp(320px, 40vw, 700px);
+                margin-left: clamp(42px, 6vw, 180px);
+            }
+            .breath__logo {
+                width: clamp(41px, 6vw, 90px);
+                height: clamp(41px, 6vw, 90px);
+                
+            }
+        }
+        .breath__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-left: clamp(42px, 6vw, 180px);
+            li{
+                width: 50%;
+            }
+        }}
     }
-}
+
 
 @media screen and (min-width: 700px) {
     .breath {
@@ -573,14 +606,26 @@
 .slider-caption {
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 120%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+    z-index: 2;
+}
+.slider-caption1{
+    position: absolute;
+    left: 50%;
+    top: 105%;
     transform: translateX(-50%);
     color: #fff;
     text-align: center;
     font-size: 18px;
-    margin: 0;
+    // margin-top: 116px;
     z-index: 2;
 }
+
 .slider-btn {
     position: absolute;
     left: 50%;
