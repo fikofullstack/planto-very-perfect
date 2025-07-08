@@ -555,3 +555,50 @@
 
     }
 }
+// ... existing code ...
+.carousel-item {
+    position: relative;
+}
+.slider-header {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    z-index: 2;
+}
+.slider-caption {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    z-index: 2;
+}
+.slider-btn {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    display: block;
+    padding: 10px 28px;
+    background: #8fff8f;
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    z-index: 2;
+}
+.slider-btn:hover {
+    background: #4be04b;
+    color: #fff;
+}
+// ... existing code ...
