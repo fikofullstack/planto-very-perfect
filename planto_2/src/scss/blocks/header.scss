@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 390vw;
+  height: 471vw;
   background: url("/planto_2/src/img/bg-img/nagy-arnold-X_IvVDuHvDQ-unsplash_1.png") no-repeat center center/cover;
   z-index: -3;
   pointer-events: none;
@@ -31,14 +31,37 @@
   .container {
     display: flex;
     justify-content: space-between;
-    margin: 21px  1px 21px;
+    margin: 21px 1px 21px;
   }
 
   &__logo {
-    width: 70px;
+    width: 122px;
     display: flex;
     align-items: center;
     justify-content: center;
+    a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.85);
+      transition: color 0.2s, box-shadow 0.2s;
+      position: relative;
+      &:hover,
+      &:focus {
+        color: #8fff8f;
+        text-decoration: underline;
+        box-shadow: 0 2px 0 0 #8fff8f;
+      }
+      &:active {
+        color: #4be04b;
+        text-decoration: underline;
+        box-shadow: 0 2px 0 0 #4be04b;
+      }
+      &.selected {
+        color: #fff;
+        font-weight: 600;
+        text-decoration: underline;
+        box-shadow: 0 2px 0 0 #fff;
+      }
+    }
   }
 
   &__img {
@@ -54,10 +77,35 @@
 
   &__nav {
     display: none;
-    color: rgba(255, 255, 255, 0.75);
+
     width: clamp(120px, 30vw, 400px);
 
     ul {
+      a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.75);
+        transition: color 0.2s, box-shadow 0.2s;
+        position: relative;
+
+        &:hover,
+        &:focus {
+          color: #8fff8f;
+          text-decoration: underline;
+          box-shadow: 0 2px 0 0 #8fff8f;
+        }
+        &:active {
+          color: #4be04b;
+          text-decoration: underline;
+          box-shadow: 0 2px 0 0 #4be04b;
+        }
+        &.selected {
+          color: #fff;
+          font-weight: 600;
+          text-decoration: underline;
+          box-shadow: 0 2px 0 0 #fff;
+        }
+      }
+
       li {
         list-style: none;
         text-decoration: none;
@@ -109,7 +157,7 @@
     }
 
     &__logo {
-      width: clamp(70px, 8vw, 120px);
+      width: clamp(90px, 10vw, 120px);
       height: clamp(70px, 8vw, 120px);
       margin-left: clamp(0px, 5vw, 60px);
     }
